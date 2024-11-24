@@ -1,0 +1,290 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    color: white;
+    margin-top: 100px;
+    background: linear-gradient(to top, #010159, #000000);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin-top: 100px;
+  }
+
+p{
+    color: white;
+    
+    text-align: right;
+    margin-right: 50px;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding-top: 40px;
+    color: #818181;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.sidenav p {
+    padding-left: 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+} 
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+} 
+
+.sidenav a:hover {
+    color: white;
+}
+
+.sidenav .closebtn {
+    
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#menu-bar{
+    width: 100%;
+    background-color: #111;
+    
+    color:white;
+    padding:20px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+#openNav{
+    font-size:30px;
+    cursor:pointer;
+}
+
+#profileIcon{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+
+
+
+.ActorInfo {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap:2%;
+    width:100%;
+    padding:0 5%;
+}
+
+.image-box {
+    max-width: 330px;
+    width: 30%; 
+    height: 330px; 
+    min-height: 330px;
+    overflow: hidden; 
+    position: relative;
+    border: 2px solid rgb(255, 255, 255); 
+    padding: 10px; 
+    border-radius: 5px; 
+    flex-shrink: 0; 
+    z-index: 0;
+}
+
+.image-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    
+}
+
+.bio-box {
+    flex-grow: 1; 
+    width: 35%;
+    min-height: 330px;
+    max-height: 330px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(33, 124, 243, 0.466);
+    font-family: Arial, sans-serif;
+    background-color: #0f2261;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    
+}
+
+.bio-box p {
+    margin: 0 5px;
+    text-align: justify;
+    margin-top: 10px; 
+    box-sizing: border-box;
+}
+
+.details-box {
+    overflow-y: scroll;
+    width: 30%;
+    min-height: 330px;
+    max-height: 330px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(33, 124, 243, 0.466);
+    font-family: Arial, sans-serif;
+    background-color: #0f2261;
+    
+}
+
+
+.bio-box h3,
+.details-box h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    background-color: #173d91;
+    
+}
+
+.details-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.details-box li {
+    margin: 5px 0;
+}
+
+strong {
+    font-weight: bold;
+    color: #4aabe4;
+}
+
+.edit-link a{
+    text-decoration: none;
+}
+
+.edit-button {
+    display: block; 
+    background-color: #1f3b75; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 17px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    margin-top: 20px; 
+    text-align: center; 
+    width: 225px;
+    float:right;
+    margin-right:5%;
+}
+
+.clear-float{
+    clear:both;
+}
+
+.edit-button:hover {
+    background-color: #315596; 
+    transform: scale(1.05); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+.edit-button:active {
+    background-color: #163a64; 
+    transform: scale(0.98); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+.MoviesAndTVShows {
+    margin-left: 40px; 
+    padding: 10px; 
+    color: rgb(255, 255, 255);
+}
+
+.MoviesAndTVShows h1 {
+    font-size: 24px; 
+    margin: 0; 
+    padding: 10px 0; 
+}
+
+.movie-list, .tvshow-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    margin: 20px 30px; 
+}
+
+.movie-box, .tvshow-box {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 200px; 
+    min-width: 150px;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    margin-bottom: 20px; 
+}
+
+.movie-image-box img, .tvshow-image-box img {
+    width: 100%; 
+    height: 250px; 
+    border-radius: 5px;
+}
+
+.movie-name h3, .tvshow-name h3 {
+    
+    font-size: 13px; 
+    margin: 0;
+    padding: 5px 0;
+    color: white;
+    text-align: center; 
+    font-weight: bold;
+}

@@ -1,0 +1,200 @@
+body {
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(to top, #010159, #000000);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    color: #fff; 
+    height: 100vh;
+    margin: 0;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin-top: 100px;
+}
+
+.container {
+    margin: 50px auto;
+    background-color: #1a1a2e; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+}
+
+h2, h3 {
+    font-size: 200%;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.nameAndPhoto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #16213e; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.photo-placeholder {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #0f3460; 
+    border: 2px solid #ffffff; 
+}
+
+.name-input {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.name-input label {
+    font-size: 18px;
+    color: #fff;
+}
+
+.name-input input {
+    padding: 8px;
+    border: 1px solid #ffffff; 
+    border-radius: 4px;
+    background-color: #0f3460;
+    color: #fff;
+    outline: none;
+}
+
+.change-photo-btn {
+    padding: 10px 20px;
+    background-color: #458ce9; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.change-photo-btn:hover {
+    background-color: #2f5e9c;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-details, .right-details {
+    background-color: #16213e;
+    padding: 15px;
+    border-radius: 8px;
+    width: 45%;
+}
+
+.left-details label, .right-details label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.left-details input, .left-details select, .right-details textarea {
+    width: 97%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #0f3460;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.right-details textarea {
+    height: 300px;
+    resize: none;
+}
+
+.movies-tvshows {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.movie-box, .tvshow-box {
+    width: 200px;
+    height: auto;
+    background-color: #0f3460;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.movie-image-box, .tvshow-image-box {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.movie-image-box img, .tvshow-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-name h3, .tvshow-name h3 {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.add-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-movie span {
+    color: #fff;
+    font-size: 24px;
+}
+
+.deleteBtn{
+    width:100%;
+    margin: 10px auto;
+    color:white;
+    background-color: #458ce9;
+    border:none;
+    border-radius:5px;
+    height:30px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.deleteBtn:hover{
+    background-color: #ff577f;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    transition: 0.3s;
+}
+
+.user-view-btn, .save-btn {
+    padding: 10px 20px;
+    background-color: #458ce9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.user-view-btn:hover, .save-btn:hover {
+    background-color: #ff577f;
+}

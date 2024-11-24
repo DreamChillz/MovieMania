@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin-top: 70px;
+    background: linear-gradient(to top, #010159, #000000);
+    color:white;
+    
+}
+
+#main{
+    margin-top: 70px;
+    transition: margin-left .5s;
+}
+
+h1{
+    color:#7074af;
+    margin:10px 20px;
+}
+
+
+
+.profile-container{
+    margin:120px auto 50px auto;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-container{
+    display:flex;
+    flex:row;
+}
+
+.profile-left-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    width:min-content;
+    border:1px grey solid;
+    padding:5px;
+
+}
+
+
+.profile-right-container{
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    border:1px grey solid;
+    border-left:none;
+    flex-grow:1;
+}
+
+.profile-image{
+    object-fit: cover;
+    object-position: center;
+    width:300px;
+    height:300px;
+    margin:5px;
+    display: block;
+}
+
+
+
+input[type=text], input[type=email], input[type=date], select, textarea {
+    padding: 5px;
+    border: 1px solid grey;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 20px;
+    width:180px;
+  }
+  
+  input[type=submit] {
+    margin:10px 20px 10px auto;
+    margin-left:auto;
+    text-decoration: none;
+    background-color: white;
+    padding:8px 15px;
+    color:#7074af;
+    font-size: 18px;
+    font-weight: bold;
+    border:1px grey solid;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width:35%;
+    transition:0.3s;
+  }
+  
+  input[type=submit]:hover {
+    color:white;
+    background-color: #7074af;
+  }
+  
+
+.input-row{
+    display: flex;
+    margin:10px 20px;
+}
+
+input,textarea{
+    font-size: 16px;
+}
+
+input[type=file] {
+    color:white;
+    margin:10px auto;
+  }
+
+/*medium devices */
+@media (min-width:601px)and (max-width: 1024px) {
+
+.profile-container{
+    width:70%;
+}
+
+input, textarea{
+font-size:14px;
+}
+
+label {
+    width:auto;
+  }
+
+  input[type=submit] {
+    width:80%;
+  }
+        
+    }

@@ -1,0 +1,88 @@
+html,body{
+    background: linear-gradient(to top, #010159, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Lato", sans-serif;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid lightgray;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.accordion .plus-minus {
+    font-size: 20px;
+    transition: 0.4s;
+  }
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: rgba(255,255,255,0.2);
+  overflow: hidden;
+  color:white;
+  margin-top: -20px;
+  margin-bottom:20px;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+#faq{
+    padding: 0 10%;
+}
+
+#main{
+    transition: margin-left .5s;
+    margin-top: 100px; 
+    color: white;
+}
+
+#main h1{
+    color:white;
+    text-align: center;
+}
+
+.update_button {
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width:20%;
+    min-width: 100px;
+    height:30px;
+   
+}
+
+.update_button:hover{
+    background-color: #000000;
+    color:white;
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.textbox{
+    width:100%;
+    height:30px;
+}

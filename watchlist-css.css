@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin-top: 70px;
+    background: linear-gradient(to top, #010159, #000000);
+}
+
+#main {
+    margin-top: 70px;
+    transition: margin-left .5s;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 120px 0 50px 0;
+    color: white;
+}
+
+.status-menu-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #121212;
+    margin: 20px auto;
+    width: 80%;
+    /* height:50px; */
+
+}
+
+
+
+.tab {
+    padding: 8px 8px;
+    margin: 5px 10px 5px 5px;
+    color: grey;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.tab:hover {
+    color: #7074af;
+}
+
+.status-menu-container input.active {
+    color: #7074af;
+    background-color: #333;
+}
+
+.status-container {
+    float: left;
+}
+
+.search-container {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+
+form.search input[type=text] {
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    margin-right: -5px;
+    width: 200px;
+}
+
+.search-container .searchbtn {
+
+    padding: 6px 10px;
+    background: #7074af;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.search-container .reset {
+    margin-left: 5px;
+    padding: 6px 10px;
+    background: #7074af;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.search-container button:hover {
+    background-color: #5b61b3;
+}
+
+
+.fa-search {
+    color: white;
+}
+
+.watchlist-table {
+    overflow-x: auto;
+}
+
+#wl-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    border: #333 1px solid;
+
+}
+
+#wl-table th,
+td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+#wl-table th {
+    border: #333 1px solid;
+}
+
+#wl-table td {
+    font-size: 16px;
+}
+
+
+/* title column */
+#wl-table td:nth-child(2) {
+    text-align: left;
+}
+
+#wl-table tr:nth-child(even) {
+    background-color: #1c1c1c;
+    /* Slightly lighter background for even rows */
+}
+
+#wl-table tr:nth-child(odd) {
+    background-color: #121212;
+    /* Dark background for odd rows */
+}
+
+#wl-table tr:hover {
+    background-color: #333;
+    /* Highlight row on hover */
+}
+
+.watchlist-image {
+    object-fit: cover;
+    object-position: center;
+    width: 80px;
+    margin: 0 10px 10px 10px;
+}
+
+.title-container {
+    display: flex;
+}
+
+.title {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-container span:not(.title) {
+    color: rgb(184, 180, 180);
+}
+
+
+.number-wheel {
+    width: 40px;
+
+}
+
+.save-button {
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.save-button .fa-save {
+    color: white;
+}
+
+/* Custom dropdown styling */
+.custom-dropdown {
+    background-color: #2b2b2b;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light text for contrast */
+    border: 1px solid #444;
+    /* Slight border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 8px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+
+
+/* Option styles */
+.custom-dropdown option {
+    background-color: #2b2b2b;
+    /* Dropdown item background */
+    color: #e0e0e0;
+    /* Dropdown item text */
+}
+
+/* When dropdown is disabled */
+.custom-dropdown:disabled {
+    background-color: #555;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/*medium devices */
+@media (min-width:601px)and (max-width: 1024px) {
+
+    #wl-table td {
+        font-size: 14px;
+
+    }
+
+    #wl-table th {
+        font-size: 16px;
+    }
+
+    .search-container .searchbtn {
+        margin-top: 10px;
+    }
+
+    .search-container .reset {
+        margin-top: 10px;
+
+    }
+
+}
